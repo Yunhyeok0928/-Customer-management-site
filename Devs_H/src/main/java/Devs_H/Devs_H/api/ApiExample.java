@@ -19,8 +19,6 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.SubscriptionListResponse;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -82,8 +80,8 @@ public class ApiExample {
         YouTube youtubeService = getService();
         // Define and execute the API request
         YouTube.Subscriptions.List request = youtubeService.subscriptions()
-                .list("id");
-        SubscriptionListResponse response = request.setChannelId("UC-6l5_P_j8dybwa2gGGvHmA").execute();
+                .list("id,snippet");
+        SubscriptionListResponse response = request.setChannelId("UC0HPqFDlrI2ngsLEanMWw2A").execute();
         System.out.println(response);
     }
 }

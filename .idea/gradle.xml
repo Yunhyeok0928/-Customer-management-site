@@ -4,8 +4,11 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Devs_H" />
+        <option name="gradleHome" value="C:/Program Files/gradle-8.7" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
